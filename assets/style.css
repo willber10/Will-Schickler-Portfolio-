@@ -20,6 +20,7 @@ h1 {
     left: 0;
     margin: 0;
     padding: 20px;
+    font-size: 40px;
 }
 
 section {
@@ -74,4 +75,39 @@ section {
         text-align: center;
         padding: 20px;
         font-size: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-right: 60px;
+        font-size: 25px;
+    }
+
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+    
+    #about img {
+        width: 20%;
+        margin-right: 20px;
+        padding: 20px;
+        background-color: gray;
+    }
+    
+    #about-text {
+        width: 50%;
+        background-color: cornflowerblue;
+    }
+
+    .project-1-photo {
+        width: 50%;
+        background-color: gray;
     }
