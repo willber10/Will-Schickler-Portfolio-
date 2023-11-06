@@ -30,18 +30,21 @@ section {
     
 }
 
+
+
 .image-container {
     position: relative;
     display: inline-block;
-  }
-  
-  .image-container video {
-    display: block;
-    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100vw;
     height: auto;
-  }
-  
-  .overlay-text {
+    object-fit: cover;
+}
+
+.overlay-text {
     position: absolute;
     top: 50%; 
     left: 50%; 
@@ -50,7 +53,7 @@ section {
     padding: 10px 20px; 
     font-size: 50px; 
     text-align: center;
-    }
+}
 
     #about {
         text-align: center;
