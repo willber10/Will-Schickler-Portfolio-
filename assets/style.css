@@ -96,6 +96,7 @@ section {
         display: flex;
         flex-wrap: wrap;
         align-items: start;
+        flex-direction: row;
     }
     
     #about img {
