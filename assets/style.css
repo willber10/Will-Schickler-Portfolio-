@@ -128,6 +128,8 @@ section {
     }
 
     #contact {
+        display: flex;
+        flex-wrap: wrap;
         background-color: black;
         color: white;
     }
@@ -181,4 +183,11 @@ section {
     .tooltip:hover .tooltiptext {
         visibility: visible;
         opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+        #contact-ul {
+            flex-direction: column;
+            /* other styles as needed... */
+        }
     }
