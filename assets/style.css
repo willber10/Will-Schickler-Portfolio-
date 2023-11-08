@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     font-family: sans-serif;
 }
 
@@ -93,25 +93,92 @@ section {
     }
 
     #about {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto 50%;
         align-items: start;
-        flex-direction: row;
     }
     
-    #about img {
-        width: 20%;
-        margin-right: 20px;
-        padding: 20px;
+    #about-images {
+        margin: 0;
+        padding: 0;
         background-color: gray;
     }
     
     #about-text {
-        width: 50%;
+        flex: 2;
+        padding: 20px;
         background-color: cornflowerblue;
+        margin: 20px;
+        margin-top: 160px;
     }
 
     .project-1-photo {
         width: 50%;
         background-color: gray;
+    }
+
+    #car-photo {
+        width: 70%; 
+        margin-bottom: 30px;
+    }
+
+    #coding-photo {
+        width: 50%; 
+        
+    }
+
+    #contact {
+        background-color: black;
+        color: white;
+    }
+
+    #contact-ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    #contact li {
+        margin: 60px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    #projects ul {
+        list-style-type: none;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 15px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; 
+        left: 50%;
+        margin-left: -60px; 
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
     }
