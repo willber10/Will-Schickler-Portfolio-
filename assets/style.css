@@ -1,3 +1,5 @@
+/* element selectors */
+
 body {
     margin: 0%;
     padding: 0%;
@@ -29,6 +31,29 @@ section {
     
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin-right: 60px;
+    font-size: 25px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    }
+
+/* class selectors */
+
 .image-container {
     position: relative;
     display: inline-block;
@@ -52,165 +77,150 @@ section {
     text-align: center;
 }
 
-    #about {
-        text-align: center;
-        padding: 5%;
-        font-size: 30px;
-    }
+.project-1-photo {
+    width: 50%;
+    background-color: gray;
+}
 
-    #projects {
-        text-align: center;
-        padding: 5%;
-        font-size: 30px;
-    }
-
-    #contact {
-        text-align: center;
-        padding: 5%;
-        font-size: 30px;
-    }
-
-
-    #footer {
-        color: white;
-        text-align: center;
-        padding: 5%;
-        font-size: 30px;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        padding: 10px;
-    }
-
-    nav ul li {
-        margin-right: 60px;
-        font-size: 25px;
-    }
-
-    #about {
-        display: grid;
-        grid-template-columns: auto 50%;
-        align-items: start;
+.tooltip {
+    position: relative;
+    display: inline-block;
     }
     
-    #about-images {
-        margin: 0;
-        padding: 0;
-        background-color: gray;
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    margin-left: -60px; 
+    opacity: 0;
+    transition: opacity 0.3s;
     }
     
-    #about-text {
-        flex: 2;
-        padding: 20px;
-        background-color: cornflowerblue;
-        margin: 20px;
-        margin-top: 160px;
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
     }
 
-    .project-1-photo {
-        width: 50%;
-        background-color: gray;
-    }
+/* id selectors */
+
+#projects {
+    text-align: center;
+    padding: 5%;
+    font-size: 30px;
+}
+
+#contact {
+    text-align: center;
+    padding: 5%;
+    font-size: 30px;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+    padding: 5%;
+    font-size: 30px;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: auto 50%;
+    align-items: start;
+}
+
+#about-images {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+#about-text {
+    flex: 2;
+    padding: 20px;
+    background-color: cornflowerblue;
+    margin: 20px;
+    margin-top: 160px;
+}
 
     #car-photo {
         width: 70%; 
         margin-bottom: 30px;
     }
-
+    
     #coding-photo {
         width: 50%; 
         
     }
-
+    
+    #about {
+        text-align: center;
+        padding: 5%;
+        font-size: 30px;
+        }
+    
     #contact {
         display: flex;
         flex-wrap: wrap;
         background-color: black;
         color: white;
     }
-
+    
     #contact-ul {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         list-style-type: none;
         align-items: center;
-        padding-left: 0;
+    padding-left: 0;
     }
 
-    #contact li {
-        margin: 60px;
+#contact li {
+    margin: 60px;
     }
 
-    footer {
-        background-color: black;
-        color: white;
+
+#projects ul {
+    list-style-type: none;
+    }
+
+
+/* media  */
+
+@media (max-width: 1200px) {
+    #contact-ul {
+        flex-direction: column;
+        -ms-flex-align: center;
         text-align: center;
-        font-size: 30px;
-        padding: 20px;
-    }
-
-    #projects ul {
-        list-style-type: none;
-    }
-
-    .tooltip {
-        position: relative;
-        display: inline-block;
-    }
-    
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 15px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%; 
-        left: 50%;
-        margin-left: -60px; 
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-    
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    @media (max-width: 1200px) {
-        #contact-ul {
-            flex-direction: column;
-            -ms-flex-align: center;
-            text-align: center;
             /* other styles as needed... */
         }
     }
 
-    @media (max-width: 600px) {
-        .overlay-text {
-            font-size: 25px;
+@media (max-width: 600px) {
+    .overlay-text {
+        font-size: 25px;
         }
     }
 
-    @media (max-width: 600px) {
-        header {
-            flex-direction: column;
-            align-items: center;
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
         }
     }
 
-    @media (max-width: 600px) {
-        #about {
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-            justify-content: center;
+@media (max-width: 600px) {
+    #about {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
         }
     }
